@@ -15,7 +15,7 @@ export function Hero({ onExploreClick, onContactClick }: HeroProps) {
         {/* Background Image: Jonathan's real 12629 Julington Oaks Dr executive residence */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/src/assets/images/real_julington_oaks_sunset_1791994300071.jpg"
+            src={AGENT_INFO.heroBackgroundImage}
             alt="12629 Julington Oaks Drive, Jacksonville, FL - Active Listing by Jonathan Daugherty"
             className="w-full h-full object-cover object-center filter brightness-[0.88]"
             fetchPriority="high"

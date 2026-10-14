@@ -12,7 +12,7 @@ export function ContactBanner({ onContactClick }: ContactBannerProps) {
         {/* Background photo */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/src/assets/images/jacksonville_river_waterfront_1791989532144.jpg"
+            src={AGENT_INFO.riverWaterfrontImage}
             alt="Jacksonville waterfront luxury community at sunset"
             className="w-full h-full object-cover filter brightness-[0.85]"
             loading="lazy"

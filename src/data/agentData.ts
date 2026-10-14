@@ -1,3 +1,16 @@
+import portraitImg from '../assets/images/jonathan_real_headshot_enhanced_1791994299317.jpg';
+import julingtonOaksImg from '../assets/images/real_julington_oaks_sunset_1791994300071.jpg';
+import heatherLakeImg from '../assets/images/real_heather_lake_exterior_1791994301899.jpg';
+import remlerDriveImg from '../assets/images/real_remler_drive_exterior_1791994300435.jpg';
+import elCaminoImg from '../assets/images/real_el_camino_fireplace_1791994301063.jpg';
+import warwickRentImg from '../assets/images/property_riverside_craftsman_1791989533562.jpg';
+import sharingCrossImg from '../assets/images/listing_sharing_cross_sunset_1791991331614.jpg';
+import acostaStreetImg from '../assets/images/property_riverside_craftsman_1791989533562.jpg';
+import banderaCircleImg from '../assets/images/property_mandarin_home_1791989534761.jpg';
+import narrowOakImg from '../assets/images/property_mandarin_home_1791989534761.jpg';
+import devonhurstDriveImg from '../assets/images/property_julington_oaks_1791989532236.jpg';
+import riverWaterfrontImg from '../assets/images/jacksonville_river_waterfront_1791989532144.jpg';
+
 export interface Property {
   id: string;
   address: string;
@@ -62,7 +75,9 @@ export const AGENT_INFO = {
   email: 'jonathansellsjax@gmail.com',
   officeAddress: '6274 Battlegate Rd, Jacksonville, FL 32258',
   marketArea: 'Jacksonville & Northeast Florida',
-  portraitImage: '/src/assets/images/jonathan_real_headshot_enhanced_1791994299317.jpg',
+  portraitImage: portraitImg,
+  heroBackgroundImage: julingtonOaksImg,
+  riverWaterfrontImage: riverWaterfrontImg,
   stats: {
     rating: '5.0',
     reviewCount: 148,
@@ -84,6 +99,21 @@ export const AGENT_INFO = {
   bio: `Jonathan Daugherty is a licensed Florida REALTOR® with Future Home Realty and The Someday Group, consistently ranked among the Top 100 Realtors in Northeast Florida. With 19+ years in the industry, over 419 career transactions, and more than $88.5M in closed volume in the past five years alone, Jonathan offers buyers, sellers, and relocating families unparalleled mastery of Jacksonville, St. Johns County, SilverLeaf, and Saint Augustine real estate.`,
 };
 
+export const IMAGES = {
+  portrait: portraitImg,
+  heroBg: julingtonOaksImg,
+  riverWaterfront: riverWaterfrontImg,
+  heatherLake: heatherLakeImg,
+  remlerDrive: remlerDriveImg,
+  elCamino: elCaminoImg,
+  warwickRent: warwickRentImg,
+  sharingCross: sharingCrossImg,
+  acostaStreet: acostaStreetImg,
+  banderaCircle: banderaCircleImg,
+  narrowOak: narrowOakImg,
+  devonhurstDrive: devonhurstDriveImg,
+};
+
 export const PROPERTIES: Property[] = [
   // Real Zillow & Homes.com Active Listings
   {
@@ -100,7 +130,7 @@ export const PROPERTIES: Property[] = [
     sqft: 3432,
     status: 'For Sale',
     representation: 'Showcase Listing · Future Home Realty Inc',
-    image: '/src/assets/images/real_julington_oaks_sunset_1791994300071.jpg',
+    image: julingtonOaksImg,
     description: 'MASSIVE 5 bedroom PLUS flex room with 3 car garage! LOW HOA neighborhood in Mandarin! 20ft soaring ceilings! 4.125% assumable loan available! Price cut below appraisal for quick sale. Massive open living space with over 3,400 sf for you to enjoy! Fully fenced backyard.',
     features: ['20-Foot Cathedral Ceilings', '4.125% Assumable Loan Option', '3-Car Attached Garage', 'Low HOA Community', 'Below Appraisal Valuation'],
     zillowUrl: 'https://www.zillow.com/profile/Jonathan%20Daugherty#active-listings',
@@ -119,7 +149,7 @@ export const PROPERTIES: Property[] = [
     sqft: 2228,
     status: 'For Sale',
     representation: 'Showcase Listing · Future Home Realty Inc',
-    image: '/src/assets/images/real_heather_lake_exterior_1791994301899.jpg',
+    image: heatherLakeImg,
     description: 'Rare offering in Deer Creek! This 3 bedroom 2 bath home sits on a beautiful nature preserve that is walking distance to the newly renovated Deer Creek country club. Located within a secure 24-hour guarded gate, boasting custom luxury master bath with walk-in marble shower.',
     features: ['24-Hour Guarded Gated Community', 'Nature Preserve Lot', 'Walking Distance to Country Club', 'Custom Marble Master Bath', 'Open Floor Plan'],
     zillowUrl: 'https://www.zillow.com/profile/Jonathan%20Daugherty#active-listings',
@@ -138,7 +168,7 @@ export const PROPERTIES: Property[] = [
     sqft: 1540,
     status: 'For Sale',
     representation: 'Showcase Listing · Under Contract',
-    image: '/src/assets/images/real_remler_drive_exterior_1791994300435.jpg',
+    image: remlerDriveImg,
     description: 'Under Contract Showcase home in desirable Mandarin! Beautiful Florida home with stacked stone accents, clerestory roof dormer, in-ground swimming pool, private fenced backyard, and lush green lawn beneath mature mossy live oaks.',
     features: ['In-Ground Private Swimming Pool', 'Horizontal White Siding & Stone Veneer', 'Large Fenced Lot', 'No Expensive CDD Fees', 'Mature Oak Canopy'],
     zillowUrl: 'https://www.zillow.com/profile/Jonathan%20Daugherty#active-listings',
@@ -157,7 +187,7 @@ export const PROPERTIES: Property[] = [
     sqft: 725,
     status: 'For Sale',
     representation: 'Active Listing · Future Home Realty Inc',
-    image: '/src/assets/images/real_el_camino_fireplace_1791994301063.jpg',
+    image: elCaminoImg,
     description: 'Fully remodeled condo just walking distance from River City Science Academy on Beach Blvd. Features rustic floor-to-ceiling stone fireplace, new wood vinyl plank floors, sliding glass doors to balcony, paint, quartz countertops, and new stainless appliances.',
     features: ['Floor-to-Ceiling Stone Fireplace', 'New Wood Vinyl Plank Flooring', 'Quartz Countertops', 'Walk to River City Science Academy', 'Low-Maintenance Living'],
     zillowUrl: 'https://www.zillow.com/profile/Jonathan%20Daugherty#active-listings',
@@ -176,7 +206,7 @@ export const PROPERTIES: Property[] = [
     sqft: 1206,
     status: 'For Rent',
     representation: 'Active Rental Listing · 3D Tour',
-    image: '/src/assets/images/property_riverside_craftsman_1791989533562.jpg',
+    image: warwickRentImg,
     description: 'Turnkey 3 bedroom, 2 bath Jacksonville rental property with modern interior finishes, spacious yard, clean curb appeal, and full 3D virtual tour available.',
     features: ['3 Bedrooms / 2 Baths', 'Full 3D Virtual Tour Available', 'Spacious Private Yard', 'Central AC & Heating', 'Turnkey Move-in Ready'],
     zillowUrl: 'https://www.zillow.com/profile/Jonathan%20Daugherty#active-rentals',
@@ -200,7 +230,7 @@ export const PROPERTIES: Property[] = [
     daysOnMarket: '5 Days On Market',
     pricePerSqFt: '$252/SF',
     representation: 'Future Home Realty Inc',
-    image: '/src/assets/images/listing_sharing_cross_sunset_1791991331614.jpg',
+    image: sharingCrossImg,
     description: 'Stunning resort-style home with illuminated evening pool, outdoor patio fireplace, and tropical landscaping. Sold in just 5 days on market at 1% below list price!',
     features: ['Sold in Just 5 Days', 'Resort Pool & Fireplace Patio', '$252 per Sq Ft', 'Future Home Realty Representation', 'Current Est. Value $422K'],
     zillowUrl: 'https://www.zillow.com/profile/Jonathan%20Daugherty#past-sales',
@@ -222,7 +252,7 @@ export const PROPERTIES: Property[] = [
     daysOnMarket: '70 Days On Market',
     pricePerSqFt: '$254/SF',
     representation: 'Buyer & Seller Representation',
-    image: '/src/assets/images/property_riverside_craftsman_1791989533562.jpg',
+    image: acostaStreetImg,
     description: 'Classic 1920s historic craftsman home in Jacksonville Riverside. Jonathan successfully handled dual representation for both buyer and seller in this landmark closing.',
     features: ['Dual Representation (Buyer & Seller)', 'Historic Craftsman Architecture', 'Walkable to 5 Points & King St', '$254 per Sq Ft', 'Closed at $375,000'],
     zillowUrl: 'https://www.zillow.com/profile/Jonathan%20Daugherty#past-sales',
@@ -244,7 +274,7 @@ export const PROPERTIES: Property[] = [
     daysOnMarket: '47 Days On Market',
     pricePerSqFt: '$174/SF',
     representation: 'Seller Representation',
-    image: '/src/assets/images/property_mandarin_home_1791989534761.jpg',
+    image: banderaCircleImg,
     description: 'Single-story suburban Florida residence featuring 4 spacious bedrooms, 2 bathrooms, 2-car garage, and warm curb appeal. Sold by Jonathan representing the home sellers.',
     features: ['4 Bedrooms / 2 Baths', '1,920 Finished Sq Ft', 'Seller Representation', '$174 per Sq Ft', 'Closed at $335,000'],
     zillowUrl: 'https://www.zillow.com/profile/Jonathan%20Daugherty#past-sales',
@@ -264,7 +294,7 @@ export const PROPERTIES: Property[] = [
     status: 'Sold',
     soldDate: 'Sold 2 months ago',
     representation: 'Buyer Representation',
-    image: '/src/assets/images/property_mandarin_home_1791989534761.jpg',
+    image: narrowOakImg,
     description: 'Charming Mandarin single family home under mossy canopy oaks, secured for buyer clients through strategic negotiation.',
     features: ['Buyer Representation', '1,957 Finished Sq Ft', 'Mature Mandarin Trees', 'Closed at $405,000'],
     zillowUrl: 'https://www.zillow.com/profile/Jonathan%20Daugherty#past-sales',
@@ -284,7 +314,7 @@ export const PROPERTIES: Property[] = [
     status: 'Sold',
     soldDate: 'Sold 2 months ago',
     representation: 'Buyer Representation',
-    image: '/src/assets/images/property_julington_oaks_1791989532236.jpg',
+    image: devonhurstDriveImg,
     description: 'Executive two-story home in Bartram Park corridor with 4 bathrooms. Successfully negotiated and closed for buyer clients.',
     features: ['3 Beds / 4 Baths', '2,206 Sq Ft', 'Buyer Representation', 'Closed at $398,000'],
     zillowUrl: 'https://www.zillow.com/profile/Jonathan%20Daugherty#past-sales',
@@ -304,7 +334,7 @@ export const PROPERTIES: Property[] = [
     status: 'Sold',
     soldDate: 'Sold 2 months ago',
     representation: 'Buyer Representation',
-    image: '/src/assets/images/real_julington_oaks_sunset_1791994300071.jpg',
+    image: julingtonOaksImg,
     description: 'Premier 5-bedroom luxury estate in Mandarin with 4 bathrooms and expansive private grounds, negotiated for buyer client.',
     features: ['5 Bedrooms / 4 Baths', '3,187 Sq Ft Luxury Estate', 'Buyer Representation', 'Closed at $700,000'],
     zillowUrl: 'https://www.zillow.com/profile/Jonathan%20Daugherty#past-sales',
@@ -320,7 +350,7 @@ export const EXPERIENCED_AREAS: ExperiencedArea[] = [
     tagline: 'Historic Spanish Architecture & Coastal Charm',
     description: 'The nation\'s oldest city offers historic downtown residences, intracoastal estates, and beach communities. Jonathan has executed 49 closed sales in this market.',
     avgPrice: '$510,000',
-    image: '/src/assets/images/jacksonville_river_waterfront_1791989532144.jpg',
+    image: riverWaterfrontImg,
   },
   {
     id: 'silverleaf',
@@ -329,7 +359,7 @@ export const EXPERIENCED_AREAS: ExperiencedArea[] = [
     tagline: 'Premier Master-Planned Living with No CDD Fees',
     description: 'One of the most sought-after new construction master developments in St. Johns County, boasting resort amenities, top schools, and no CDD bond fees. Jonathan has 23 verified sales here.',
     avgPrice: '$545,000',
-    image: '/src/assets/images/real_julington_oaks_sunset_1791994300071.jpg',
+    image: julingtonOaksImg,
   },
   {
     id: 'mandarin',
@@ -338,7 +368,7 @@ export const EXPERIENCED_AREAS: ExperiencedArea[] = [
     tagline: 'Historic River Oaks & Southern Serenity',
     description: 'Famed for canopy roads, grand moss-draped live oaks, and direct St. Johns River frontage. Large residential lots with serene river breezes and top amenities.',
     avgPrice: '$485,000',
-    image: '/src/assets/images/real_remler_drive_exterior_1791994300435.jpg',
+    image: remlerDriveImg,
   },
   {
     id: 'creekside',
@@ -347,7 +377,7 @@ export const EXPERIENCED_AREAS: ExperiencedArea[] = [
     tagline: 'River Access, Marinas & Waterfront Serenity',
     description: 'Boating and waterfront haven along protected creeks and St. Johns tributaries. Ideal for boat owners, water enthusiasts, and families seeking quiet coastal living.',
     avgPrice: '$460,000',
-    image: '/src/assets/images/jacksonville_river_waterfront_1791989532144.jpg',
+    image: riverWaterfrontImg,
   },
   {
     id: 'world-golf-village',
@@ -356,7 +386,7 @@ export const EXPERIENCED_AREAS: ExperiencedArea[] = [
     tagline: 'Championship Golf Courses & Executive Estates',
     description: 'Home to the King & Bear and Slammer & Squire championship courses, scenic lakefront properties, and gated neighborhoods with premier clubhouse access.',
     avgPrice: '$530,000',
-    image: '/src/assets/images/real_heather_lake_exterior_1791994301899.jpg',
+    image: heatherLakeImg,
   },
   {
     id: 'saint-johns',
@@ -365,7 +395,7 @@ export const EXPERIENCED_AREAS: ExperiencedArea[] = [
     tagline: 'A-Rated Schools & Master Lagoon Communities',
     description: 'Consistently ranked Florida\'s #1 public school district. Features world-class crystal lagoon amenities, nature preserves, and family-first master communities.',
     avgPrice: '$580,000',
-    image: '/src/assets/images/real_julington_oaks_sunset_1791994300071.jpg',
+    image: julingtonOaksImg,
   },
 ];
 
