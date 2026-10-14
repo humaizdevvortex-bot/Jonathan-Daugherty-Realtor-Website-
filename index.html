@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function() {
+        try {
+          var _origFetch = window.fetch;
+          var _currentFetch = typeof _origFetch === 'function' ? function() { return _origFetch.apply(window, arguments); } : _origFetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() { return _currentFetch; },
+            set: function(val) { _currentFetch = val; },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {}
+
+        window.addEventListener('error', function(event) {
+          if (event.filename && event.filename.indexOf('chrome-extension://') !== -1) {
+            event.preventDefault();
+            return true;
+          }
+        });
+      })();
+    </script>
+    <title>Jonathan Daugherty | Jacksonville, FL Real Estate</title>
+    <meta name="description" content="Premium real estate advisory with Jonathan Daugherty, Realtor at Future Home Realty. Serving Jacksonville, St. Johns, Mandarin, and Northeast Florida communities with 19+ years of local expertise." />
+    <meta property="og:title" content="Jonathan Daugherty | Jacksonville, FL Real Estate" />
+    <meta property="og:description" content="Premium real estate advisory with Jonathan Daugherty, Realtor at Future Home Realty. Serving Jacksonville, St. Johns, Mandarin, and Northeast Florida communities with 19+ years of local expertise." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jonathan Daugherty | Jacksonville, FL Real Estate" />
+    <meta name="twitter:description" content="Northeast Florida Real Estate Specialist · Future Home Realty · (904) 859-2469" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' rx='8' fill='%23202020'/%3E%3Cpath d='M18 6L6 15v14c0 .55.45 1 1 1h22c.55 0 1-.45 1-1V15L18 6z' fill='none' stroke='%23A77B43' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M13 18a5 5 0 0 1 10 0v12H13V18z' fill='%232C2B29' stroke='%23E2BA84' stroke-width='1.5'/%3E%3Ccircle cx='18' cy='18' r='1.5' fill='%23A77B43'/%3E%3C/svg%3E" />
+  </head>
+  <body class="bg-[#F7F6F2] text-[#242424] antialiased selection:bg-[#A77B43]/20 selection:text-[#242424]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
