@@ -16,7 +16,7 @@ export function PropertyModal({ property, onClose, onInquire }: PropertyModalPro
       onClick={onClose}
     >
       <div
-        className="relative bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-[#E7E3DC] animate-in zoom-in-95 duration-200"
+        className="relative bg-white rounded-3xl max-w-2xl lg:max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-[#E7E3DC] animate-in zoom-in-95 duration-200"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}

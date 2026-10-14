@@ -14,16 +14,16 @@ export function Testimonials() {
   };
 
   return (
-    <section id="reviews" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-[#E7E3DC]">
+    <section id="reviews" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 w-full max-w-7xl xl:max-w-[1440px] 2xl:max-w-[1680px] mx-auto border-t border-[#E7E3DC]">
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
-        <div className="max-w-2xl">
+        <div className="max-w-2xl xl:max-w-3xl">
           <span className="text-xs font-bold text-[#A77B43] uppercase tracking-wider">
             Verified Client Feedback
           </span>
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#242424] tracking-tight mt-2 text-balance">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#242424] tracking-tight mt-2 text-balance">
             What Clients Say About <span className="text-[#A77B43]">Working With Jonathan.</span>
           </h2>
-          <p className="text-sm sm:text-base text-[#747474] mt-3 leading-relaxed">
+          <p className="text-sm sm:text-base xl:text-lg text-[#747474] mt-3 leading-relaxed">
             Rated 5.0 out of 5.0 across 148 verified client reviews on Zillow & Experience.com. Authentic testimonials from real Northeast Florida home sales and purchases.
           </p>
         </div>
@@ -49,11 +49,11 @@ export function Testimonials() {
       </div>
 
       {/* Grid of Client Reviews */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 xl:gap-8 mb-10">
         {REVIEWS.slice(0, 3).map((review) => (
           <div
             key={review.id}
-            className="bg-white rounded-3xl p-7 border border-[#E7E3DC] shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between"
+            className="bg-white rounded-3xl xl:rounded-[32px] p-7 xl:p-8 border border-[#E7E3DC] shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between"
           >
             <div>
               <div className="flex items-center justify-between mb-4">

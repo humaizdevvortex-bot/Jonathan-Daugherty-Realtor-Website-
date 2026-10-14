@@ -38,18 +38,12 @@ export function Header({ onContactClick }: HeaderProps) {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8 pt-3 sm:pt-4 transition-all duration-300">
-      <div
-        className={`max-w-6xl mx-auto rounded-full px-5 py-3 sm:px-7 sm:py-3.5 transition-all duration-300 flex items-center justify-between gap-6 ${
-          isScrolled
-            ? 'bg-white/95 backdrop-blur-md shadow-md shadow-black/5 border border-[#E7E3DC]'
-            : 'bg-white/90 backdrop-blur-sm border border-[#E7E3DC]/70 shadow-sm'
-        }`}
-      >
+    <header className="sticky top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-[#E7E3DC] transition-all duration-300 shadow-xs">
+      <div className="w-full max-w-7xl xl:max-w-[1440px] 2xl:max-w-[1680px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 py-3.5 sm:py-4 flex items-center justify-between gap-6">
         {/* Brand Zone: Bespoke Logo Emblem and Wordmark */}
         <a
           href="#"
-          className="focus-visible:outline-2 focus-visible:outline-[#A77B43] rounded-lg group"
+          className="focus-visible:outline-2 focus-visible:outline-[#A77B43] rounded-lg group shrink-0"
           aria-label="Jonathan Daugherty Realtor"
         >
           <Logo size="sm" variant="dark" />
@@ -81,7 +75,7 @@ export function Header({ onContactClick }: HeaderProps) {
           </a>
           <button
             onClick={onContactClick}
-            className="px-4 py-2 bg-[#A77B43] hover:bg-[#825B2E] text-white text-xs font-semibold tracking-wide uppercase rounded-full transition-all duration-200 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A77B43]"
+            className="px-5 py-2.5 bg-[#A77B43] hover:bg-[#825B2E] text-white text-xs font-semibold tracking-wide uppercase rounded-full transition-all duration-200 shadow-sm hover:shadow hover:-translate-y-0.5 active:translate-y-0 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A77B43]"
           >
             Let's Talk
           </button>
@@ -108,8 +102,8 @@ export function Header({ onContactClick }: HeaderProps) {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="sm:hidden mt-2 max-w-6xl mx-auto bg-white rounded-2xl p-5 shadow-xl border border-[#E7E3DC] animate-in fade-in slide-in-from-top-2 duration-200">
-          <div className="flex flex-col gap-3">
+        <div className="lg:hidden border-t border-[#E7E3DC] bg-white px-4 sm:px-6 py-4 shadow-xl animate-in fade-in slide-in-from-top-2 duration-200">
+          <div className="w-full max-w-7xl xl:max-w-[1440px] 2xl:max-w-[1680px] mx-auto flex flex-col gap-3">
             {navLinks.map((link) => (
               <a
                 key={link.label}

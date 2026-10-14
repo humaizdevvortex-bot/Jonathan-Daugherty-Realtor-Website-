@@ -74,19 +74,19 @@ export function ContactSection({ initialInterest, initialMessage }: ContactSecti
   };
 
   return (
-    <section id="contact" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-      <div className="bg-white rounded-3xl sm:rounded-[36px] p-8 sm:p-12 lg:p-16 border border-[#E7E3DC] shadow-sm">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+    <section id="contact" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 w-full max-w-7xl xl:max-w-[1440px] 2xl:max-w-[1680px] mx-auto">
+      <div className="bg-white rounded-3xl sm:rounded-[36px] xl:rounded-[44px] p-8 sm:p-12 lg:p-16 xl:p-20 border border-[#E7E3DC] shadow-sm">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 xl:gap-20">
           {/* Left Column: Contact Details & Direct Channels (col-span-5) */}
           <div className="lg:col-span-5 flex flex-col justify-between">
             <div>
               <span className="text-xs font-bold text-[#A77B43] uppercase tracking-wider">
                 Direct Communication
               </span>
-              <h2 className="font-display text-3xl sm:text-4xl font-bold text-[#242424] tracking-tight mt-2 mb-4 text-balance">
+              <h2 className="font-display text-3xl sm:text-4xl xl:text-5xl font-bold text-[#242424] tracking-tight mt-2 mb-4 text-balance">
                 Let's Talk About Your <span className="text-[#A77B43]">Real Estate Goals.</span>
               </h2>
-              <p className="text-sm text-[#747474] leading-relaxed mb-8">
+              <p className="text-sm xl:text-base text-[#747474] leading-relaxed mb-8">
                 Reach Jonathan directly for confidential consultations, comparative market analyses, neighborhood tours, and off-market property previews.
               </p>
 

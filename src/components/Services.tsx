@@ -22,24 +22,24 @@ export function Services({ onSelectService }: ServicesProps) {
   };
 
   return (
-    <section id="services" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-      <div className="max-w-3xl mb-14">
+    <section id="services" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 w-full max-w-7xl xl:max-w-[1440px] 2xl:max-w-[1680px] mx-auto">
+      <div className="max-w-3xl xl:max-w-4xl mb-14">
         <span className="text-xs font-bold text-[#A77B43] uppercase tracking-wider">
           Client-Centric Real Estate Representation
         </span>
-        <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#242424] tracking-tight mt-2 text-balance">
+        <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#242424] tracking-tight mt-2 text-balance">
           Real Estate Guidance <span className="text-[#A77B43]">for Every Move.</span>
         </h2>
-        <p className="text-sm sm:text-base text-[#747474] mt-3 leading-relaxed">
+        <p className="text-sm sm:text-base xl:text-lg text-[#747474] mt-3 leading-relaxed">
           Whether you are purchasing your first home, maximizing your equity on a sale, or relocating across the country to Northeast Florida, Jonathan provides high-touch personal guidance.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 xl:gap-8">
         {SERVICES.map((service) => (
           <div
             key={service.id}
-            className="group bg-white rounded-3xl p-7 border border-[#E7E3DC] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between hover:-translate-y-1"
+            className="group bg-white rounded-3xl xl:rounded-[32px] p-7 xl:p-8 border border-[#E7E3DC] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between hover:-translate-y-1"
           >
             <div>
               <div className="w-12 h-12 rounded-2xl bg-[#F7F6F2] group-hover:bg-[#A77B43]/10 transition-colors flex items-center justify-center mb-6">

@@ -35,20 +35,20 @@ export function StatisticsStrip() {
   ];
 
   return (
-    <section className="py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-      <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-[#E7E3DC] shadow-sm">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-8 divide-y sm:divide-y-0 sm:divide-x divide-[#E7E3DC]/80">
+    <section className="py-6 px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 w-full max-w-7xl xl:max-w-[1440px] 2xl:max-w-[1680px] mx-auto">
+      <div className="bg-white rounded-2xl sm:rounded-3xl xl:rounded-[36px] p-6 sm:p-8 xl:p-10 border border-[#E7E3DC] shadow-sm">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-8 xl:gap-10 divide-y sm:divide-y-0 sm:divide-x divide-[#E7E3DC]/80">
           {stats.map((stat, idx) => (
             <div
               key={stat.label}
-              className={`flex flex-col ${idx > 0 ? 'pt-4 sm:pt-0 sm:pl-6 lg:pl-8' : ''}`}
+              className={`flex flex-col ${idx > 0 ? 'pt-4 sm:pt-0 sm:pl-6 lg:pl-8 xl:pl-10' : ''}`}
             >
               <div className="flex items-baseline gap-0.5">
-                <span className="font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#242424] tabular-nums tracking-tight">
+                <span className="font-display text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-extrabold text-[#242424] tabular-nums tracking-tight">
                   {stat.value}
                 </span>
                 {stat.suffix && (
-                  <span className="font-display text-lg sm:text-xl font-bold text-[#A77B43]">
+                  <span className="font-display text-lg sm:text-xl xl:text-2xl font-bold text-[#A77B43]">
                     {stat.suffix}
                   </span>
                 )}

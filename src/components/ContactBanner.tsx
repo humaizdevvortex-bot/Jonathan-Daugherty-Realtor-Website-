@@ -7,8 +7,8 @@ interface ContactBannerProps {
 
 export function ContactBanner({ onContactClick }: ContactBannerProps) {
   return (
-    <section className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-      <div className="relative rounded-3xl sm:rounded-[36px] overflow-hidden min-h-[380px] sm:min-h-[420px] shadow-2xl border border-[#E7E3DC] flex items-center">
+    <section className="py-12 px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 w-full max-w-7xl xl:max-w-[1440px] 2xl:max-w-[1680px] mx-auto">
+      <div className="relative rounded-3xl sm:rounded-[36px] xl:rounded-[44px] overflow-hidden min-h-[380px] sm:min-h-[420px] xl:min-h-[460px] shadow-2xl border border-[#E7E3DC] flex items-center">
         {/* Background photo */}
         <div className="absolute inset-0 z-0">
           <img
@@ -21,16 +21,16 @@ export function ContactBanner({ onContactClick }: ContactBannerProps) {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 p-8 sm:p-14 lg:p-16 max-w-3xl text-white">
+        <div className="relative z-10 p-8 sm:p-14 lg:p-16 xl:p-20 max-w-3xl xl:max-w-4xl text-white">
           <span className="text-xs font-bold text-[#E2BA84] uppercase tracking-wider block mb-3">
             Start Your Northeast Florida Search
           </span>
 
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-4 text-balance">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-white mb-4 text-balance">
             Your Next Move Starts With a Conversation.
           </h2>
 
-          <p className="text-sm sm:text-base text-neutral-300 leading-relaxed mb-8 max-w-xl">
+          <p className="text-sm sm:text-base xl:text-lg text-neutral-300 leading-relaxed mb-8 max-w-xl xl:max-w-2xl">
             Whether you are buying your first home, selling a property, evaluating new construction warranties, or exploring Jacksonville neighborhoods, Jonathan can help you understand your next steps.
           </p>
 

@@ -62,6 +62,7 @@ export default function App() {
         <Hero
           onExploreClick={scrollToProperties}
           onContactClick={scrollToContact}
+          onSelectProperty={setSelectedProperty}
         />
 
         {/* 5-Metric Strip */}

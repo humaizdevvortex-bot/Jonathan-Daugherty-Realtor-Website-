@@ -20,17 +20,17 @@ export function PropertyDiscovery({ onSelectProperty }: PropertyDiscoveryProps) 
   const secondary = filteredProperties.slice(1, 4);
 
   return (
-    <section id="properties" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <section id="properties" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 w-full max-w-7xl xl:max-w-[1440px] 2xl:max-w-[1680px] mx-auto">
       {/* Header and Filter Controls */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
-        <div className="max-w-2xl">
+        <div className="max-w-2xl xl:max-w-3xl">
           <span className="text-xs font-bold text-[#A77B43] uppercase tracking-wider">
             Zillow & Homes.com Verified Real Estate
           </span>
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#242424] tracking-tight mt-2 text-balance">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#242424] tracking-tight mt-2 text-balance">
             Find a Home That <span className="text-[#A77B43]">Fits Your Life.</span>
           </h2>
-          <p className="text-sm sm:text-base text-[#747474] mt-3 leading-relaxed">
+          <p className="text-sm sm:text-base xl:text-lg text-[#747474] mt-3 leading-relaxed">
             Real active candidate listings, recently closed transactions, and rentals directly from Jonathan Daugherty's official Zillow profile.
           </p>
         </div>
@@ -81,12 +81,12 @@ export function PropertyDiscovery({ onSelectProperty }: PropertyDiscoveryProps) 
       </div>
 
       {/* Asymmetric Bento Grid - Inspired directly by reference screenshot */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 xl:gap-10 items-stretch">
         {/* Left Column: Featured Marquee Property Card (col-span-7) */}
         {featured && (
           <div
             onClick={() => onSelectProperty(featured)}
-            className="lg:col-span-7 group relative rounded-3xl overflow-hidden cursor-pointer shadow-md hover:shadow-xl transition-all duration-300 min-h-[460px] sm:min-h-[520px] lg:min-h-[560px] border border-[#E7E3DC]"
+            className="lg:col-span-7 group relative rounded-3xl xl:rounded-[36px] overflow-hidden cursor-pointer shadow-md hover:shadow-xl transition-all duration-300 min-h-[460px] sm:min-h-[520px] lg:min-h-[560px] xl:min-h-[640px] border border-[#E7E3DC]"
           >
             <img
               src={featured.image}

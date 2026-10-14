@@ -7,16 +7,16 @@ interface LocalExpertiseProps {
 
 export function LocalExpertise({ onCommunityInquiry }: LocalExpertiseProps) {
   return (
-    <section id="communities" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-[#E7E3DC]">
+    <section id="communities" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 w-full max-w-7xl xl:max-w-[1440px] 2xl:max-w-[1680px] mx-auto border-t border-[#E7E3DC]">
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
-        <div className="max-w-2xl">
+        <div className="max-w-2xl xl:max-w-3xl">
           <span className="text-xs font-bold text-[#A77B43] uppercase tracking-wider">
             Verified Homes.com Sales Track Record
           </span>
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#242424] tracking-tight mt-2 text-balance">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#242424] tracking-tight mt-2 text-balance">
             Areas Jonathan is <span className="text-[#A77B43]">Experienced In</span>
           </h2>
-          <p className="text-sm sm:text-base text-[#747474] mt-3 leading-relaxed">
+          <p className="text-sm sm:text-base xl:text-lg text-[#747474] mt-3 leading-relaxed">
             Verified local transaction volume across Northeast Florida communities. With 49 sales in Saint Augustine, 23 in SilverLeaf, and over a decade of Mandarin riverfront expertise.
           </p>
         </div>
@@ -30,11 +30,11 @@ export function LocalExpertise({ onCommunityInquiry }: LocalExpertiseProps) {
       </div>
 
       {/* 6-Grid matching exact Homes.com "Areas Jonathan is Experienced In" */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 xl:gap-8">
         {EXPERIENCED_AREAS.map((area) => (
           <div
             key={area.id}
-            className="group bg-white rounded-3xl overflow-hidden border border-[#E7E3DC] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+            className="group bg-white rounded-3xl xl:rounded-[32px] overflow-hidden border border-[#E7E3DC] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
           >
             <div>
               <div className="relative aspect-[16/10] overflow-hidden bg-neutral-900">

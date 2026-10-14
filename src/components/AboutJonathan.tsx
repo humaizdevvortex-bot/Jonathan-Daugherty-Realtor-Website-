@@ -15,11 +15,11 @@ export function AboutJonathan({ onContactClick }: AboutJonathanProps) {
   ];
 
   return (
-    <section id="about" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <section id="about" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 w-full max-w-7xl xl:max-w-[1440px] 2xl:max-w-[1680px] mx-auto">
       {/* Two-tone split card matching reference "About Us" section */}
-      <div className="rounded-3xl sm:rounded-[36px] overflow-hidden bg-[#202020] border border-neutral-800 shadow-2xl grid grid-cols-1 lg:grid-cols-12 items-stretch">
+      <div className="rounded-3xl sm:rounded-[36px] xl:rounded-[44px] overflow-hidden bg-[#202020] border border-neutral-800 shadow-2xl grid grid-cols-1 lg:grid-cols-12 items-stretch">
         {/* Left Column: Dark Charcoal Editorial Content (col-span-7) */}
-        <div className="lg:col-span-7 p-8 sm:p-12 lg:p-16 flex flex-col justify-between text-white">
+        <div className="lg:col-span-7 p-8 sm:p-12 lg:p-16 xl:p-20 flex flex-col justify-between text-white">
           <div>
             <div className="inline-flex items-center gap-2 mb-4 text-[#A77B43] text-xs font-bold uppercase tracking-wider">
               <Award className="w-4 h-4" />

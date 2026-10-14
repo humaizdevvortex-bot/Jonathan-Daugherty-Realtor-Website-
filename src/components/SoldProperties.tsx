@@ -19,16 +19,16 @@ export function SoldProperties({ onSelectProperty }: SoldPropertiesProps) {
   const displayedProperties = showAll ? soldProperties : soldProperties.slice(0, 4);
 
   return (
-    <section id="sold-homes" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-[#E7E3DC]">
+    <section id="sold-homes" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 w-full max-w-7xl xl:max-w-[1440px] 2xl:max-w-[1680px] mx-auto border-t border-[#E7E3DC]">
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
-        <div className="max-w-2xl">
+        <div className="max-w-2xl xl:max-w-3xl">
           <span className="text-xs font-bold text-[#A77B43] uppercase tracking-wider">
             Verified Historical Sales Record
           </span>
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#242424] tracking-tight mt-2 text-balance">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#242424] tracking-tight mt-2 text-balance">
             Proven Experience. <span className="text-[#A77B43]">Real Transactions.</span>
           </h2>
-          <p className="text-sm sm:text-base text-[#747474] mt-3 leading-relaxed">
+          <p className="text-sm sm:text-base xl:text-lg text-[#747474] mt-3 leading-relaxed">
             A verified track record across Jacksonville, Mandarin, Julington Creek, and Riverside. Each property below represents a successfully executed transaction representing buyers or sellers.
           </p>
         </div>
@@ -69,7 +69,7 @@ export function SoldProperties({ onSelectProperty }: SoldPropertiesProps) {
       </div>
 
       {/* Grid of Sold Properties */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 xl:gap-8">
         {displayedProperties.map((property) => (
           <div
             key={property.id}

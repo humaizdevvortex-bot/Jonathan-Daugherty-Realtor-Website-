@@ -28,17 +28,17 @@ export function MortgageCalculator() {
   const totalMonthly = Math.round(monthlyPI + monthlyTax + monthlyInsurance);
 
   return (
-    <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-      <div className="bg-white rounded-3xl p-6 sm:p-10 lg:p-12 border border-[#E7E3DC] shadow-sm">
-        <div className="max-w-3xl mb-8">
+    <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 w-full max-w-7xl xl:max-w-[1440px] 2xl:max-w-[1680px] mx-auto">
+      <div className="bg-white rounded-3xl xl:rounded-[36px] p-6 sm:p-10 lg:p-12 xl:p-16 border border-[#E7E3DC] shadow-sm">
+        <div className="max-w-3xl xl:max-w-4xl mb-8">
           <div className="inline-flex items-center gap-2 text-xs font-bold text-[#A77B43] uppercase tracking-wider mb-2">
             <Calculator className="w-4 h-4" />
             <span>Buyer Planning Tool</span>
           </div>
-          <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-[#242424] tracking-tight">
+          <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-[#242424] tracking-tight">
             Northeast Florida Mortgage & Affordability Estimator
           </h2>
-          <p className="text-xs sm:text-sm text-[#747474] mt-2 leading-relaxed">
+          <p className="text-xs sm:text-sm xl:text-base text-[#747474] mt-2 leading-relaxed">
             Estimate your monthly investment including Principal, Interest, Florida Property Tax (avg 1.05%), and Homeowners Hazard Insurance.
           </p>
         </div>
